@@ -1,1 +1,2 @@
-# atom-l-rlinger
+# Oppgaver for lærlinger i ATOM:
+
