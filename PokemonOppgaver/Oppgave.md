@@ -1,5 +1,7 @@
 # Python Oppgaver: Utforske PokeAPI
 [Les mer om PokéApi her](https://pokeapi.co)
+
+[PokéApi dokumentasjon](https://pokeapi.co/docs/v2#pokemon-section)
 ```bash
 url: https://pokeapi.co/api/v2/pokemon/{id}/
 ```
@@ -10,6 +12,13 @@ url: https://pokeapi.co/api/v2/pokemon/{id}/
 1. Skriv en funksjon som tar inn et Pokémon's id.
 2. Bruk funksjonen til å hente Pokémonens navn, type, høyde, og vekt.
 3. Skriv ut informasjonen i en pent formatert måte.
+
+Tips:
+
+Utforsk API-dokumentasjonen for å forstå hvordan du kan hente informasjon om en Pokémon ved hjelp av dens ID.
+Bruk en HTTP-klient i Python, som `requests`, for å sende en GET-forespørsel til API-endepunktet.
+Ta en titt på responsen fra API-en og identifiser feltene som inneholder `navnet`, `typer`, `høyden` og `vekten` til Pokémonen.
+Lag en pent formatert utskrift ved hjelp av Python sin `print()` funksjon.
 
 Input:
 ```
@@ -32,6 +41,12 @@ Types: Poison
 1. Bruk API-endepunktet for å hente en liste over alle Pokémon-typer.
 2. Skriv ut hver type i en liste.
 
+Tips: 
+Undersøk API-dokumentasjonen for å finne ut hvilket endepunkt som gir en liste over alle Pokémon-typer.
+Bruk Python sin `requests` modul for å sende en GET-forespørsel til det relevante endepunktet.
+Analyser responsen for å identifisere feltet som inneholder listen over Pokémon-typer.
+Bruk en `for-loop` til å skrive ut hver type i en liste.
+
 Resultat:
 ```
 Available types: Normal, Fighting, Flying, Poison, Ground, Rock, Bug, Ghost, Steel, Fire, Water, Grass, Electric, Psychic, Ice, Dragon, Dark, Fairy, Unknown, Shadow
@@ -45,6 +60,13 @@ Available types: Normal, Fighting, Flying, Poison, Ground, Rock, Bug, Ghost, Ste
 1. Skriv en funksjon som tar inn en Pokémon-type.
 2. Bruk funksjonen til å hente en liste over alle Pokémon av den typen.
 3. Skriv ut navnene på alle Pokémon i listen.
+
+Tips:
+
+Utforsk API-dokumentasjonen for å finne ut hvordan du kan hente en liste over alle Pokémon av en bestemt type.
+Lag en funksjon som tar inn en Pokémon-type som parameter og sender en GET-forespørsel til det relevante API-endepunktet.
+Analyser responsen for å identifisere feltet som inneholder listen over Pokémon.
+Bruk en løkke til å skrive ut navnene på alle Pokémon i listen.
 
 Input:
 ```
