@@ -1,9 +1,39 @@
+import requests
+
+response = requests.get("https://pokeapi.co/api/v2/type")
 
 
-def menu():
-    print("1")
-    print("2")
-    print("3")
+
+
+
+#def option3():
+ #   print("Option 3 has been called using function!")
+
+
+
+#while option != 0:
+#     if option == 1:
+
+
+        
+
+
+
+
+
+  #   elif option == 2:
+  #          print("Option 2 has been called.")
+ #    elif option == 3:
+ #         option3()  
+#else:
+ #    print("Invalid option")
+
+
+#print()
+#menu()
+#option = int(input("Enter your option: "))
+
+#print("THANKS FOR USING THIS PROGRAM")
 
 
 
@@ -31,13 +61,48 @@ def menu():
 #hovedmeny for å velge forskjellige handlinger søke etter pokemon, liste alle typer avslutte
 
 
-#valg = int(input('hva velger du?'))
-#if valg == 1:
-#   print('Du har valgt å søke etter pokemon')
-#if valg == 2:
-#   print('Du har valgt å liste alle pokemon')
-#if valg == 3:
-#    print('x')
+#viser til brukeren hva han kan velge
+def valg():
+    print("1. Get all pokemon info")
+    print("2. List all types")
+    print("3. #Get Pokemon by type")
+    print("4. Compare two Pokemon")
+    print("5. Exit")
+
+#den gjør at menu blir vist i terminalen
+valg()
+
+
+#spør brukeren hva vil han velge
+valg = int(input('hva velger du?'))
+#hvis brukeren valgte 1
+if valg == 1:
+    print(21)
+#Hvis brukeren valgte 2
+if valg == 2:
+      for type in response.json()["results"]:
+           print(type["name"])
+#Hvis brukeren valgte 3
+if valg == 3:
+    #t
+    type = "electric"
+
+url = f"https://pokeapi.co/api/v2/type/{type}"
+
+response = requests.get(url).json()
+
+pokemon_list = response["pokemon"]
+
+for pokemon in pokemon_list: print(pokemon["pokemon"]["name"])
+
+
+
+#hvis brukeren valgte 4
+if valg == 4:
+    print('21')
+#hvis brukeren valgte 4
+if valg == 5:
+    print('21')
 
 
 

@@ -1,9 +1,11 @@
 import requests
 
-response = requests.get("https://pokeapi.co/api/v2/type/3")
+type = "electric"
 
+url = f"https://pokeapi.co/api/v2/type/{type}"
 
-response = requests.get("https://pokeapi.co/api/v2/pokemon/6")
-print("type" , response.json()["types"][0]["type"]["name"])
+response = requests.get(url).json()
 
+pokemon_list = response["pokemon"]
 
+for pokemon in pokemon_list: print(pokemon["pokemon"]["name"])
