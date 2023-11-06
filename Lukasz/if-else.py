@@ -5,3 +5,4 @@ if age > 18:
     print('du er ')
 if age == 18:
     print('du er 18 år gammel')
+    
