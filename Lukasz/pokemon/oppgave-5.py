@@ -6,7 +6,6 @@ response = requests.get("https://pokeapi.co/api/v2/type")
 
 
 
-
 #def option3():
  #   print("Option 3 has been called using function!")
 
@@ -78,31 +77,73 @@ valg()
 valg = int(input('hva velger du?'))
 #hvis brukeren valgte 1
 if valg == 1:
-    print(21)
+    userpokemon = input("Hvilken pokemon letter du etter?")
+    url = f"https://pokeapi.co/api/v2/pokemon/{userpokemon}"
+    response = requests.get(url)
+    print("type" , response.json()["types"][0]["type"]["name"])
+    print("navn " + ( response.json()["name"]))
+    print("height" , response.json()["height"])
+    print("weight" , response.json()["weight"])
+
+
 #Hvis brukeren valgte 2
 if valg == 2:
-      for type in response.json()["results"]:
-           print(type["name"])
+    url = f"https://pokeapi.co/api/v2/type"
+    response = requests.get(url)
+    for type in response.json()["results"]:
+        print(type["name"])
+        
 #Hvis brukeren valgte 3
 if valg == 3:
     #velger type som pc skal se etter
-    usertype = input('hvavelger du ')
-type = usertype
+    usertype = input('hvilken type pokemon velger du? ')
+    url = f"https://pokeapi.co/api/v2/type/{usertype}"
+    response = requests.get(url)
+    print(response.json()["pokemon"])
+    for pokemon in response.json()["pokemon"]: print(pokemon["pokemon"]["name"])
+#response = requests.get(url).json()
 
-url = f"https://pokeapi.co/api/v2/type/{type}"
+#pokemon_list = response["pokemon"]
 
-response = requests.get(url).json()
 
-pokemon_list = response["pokemon"]
-
-for pokemon in pokemon_list: print(pokemon["pokemon"]["name"])
 
 
 
 #hvis brukeren valgte 4
 if valg == 4:
-    print('21')
-#hvis brukeren valgte 4
+    #hvilken pokemon velger du?
+    usertype1 = input('hvilken type pokemon velger du? ')
+    usertype2 = input('hvilken type pokemon velger du? ')
+
+    pokemon54 = requests.get("https://pokeapi.co/api/v2/pokemon/{usertype1}")
+pokemon3 = requests.get("https://pokeapi.co/api/v2/pokemon/{usertype2}")
+
+
+pokemon54_height=pokemon54.json()["height"]
+pokemon54_weight=pokemon54.json()["weight"]
+
+pokemon3_height=pokemon3.json()["height"]
+pokemon3_weight=pokemon3.json()["weight"]
+
+
+print (pokemon3_height > pokemon54_height)
+print (pokemon3_weight > pokemon54_weight)
+
+
+if pokemon3_weight > pokemon54_weight:
+    print("pokemon3 weier mer enn pokemon54")
+else:
+    print("pokemon54 weier mer enn pokemon3")
+
+if pokemon3_height > pokemon54_height:
+    print("pokemon3 er høyere enn pokemon54")
+else:
+    print("pokemon54 er høyere enn pokemon3")
+
+
+
+
+#hvis brukeren valgte 5
 if valg == 5:
     print('21')
 
