@@ -6,6 +6,7 @@ response = requests.get("https://pokeapi.co/api/v2/type")
 
 
 
+
 #def option3():
  #   print("Option 3 has been called using function!")
 
@@ -65,7 +66,7 @@ response = requests.get("https://pokeapi.co/api/v2/type")
 def valg():
     print("1. Get all pokemon info")
     print("2. List all types")
-    print("3. #Get Pokemon by type")
+    print("3. Get Pokemon by type")
     print("4. Compare two Pokemon")
     print("5. Exit")
 
@@ -84,8 +85,9 @@ if valg == 2:
            print(type["name"])
 #Hvis brukeren valgte 3
 if valg == 3:
-    #t
-    type = "electric"
+    #velger type som pc skal se etter
+    usertype = input('hvavelger du ')
+type = usertype
 
 url = f"https://pokeapi.co/api/v2/type/{type}"
 
