@@ -77,7 +77,7 @@ valg()
 valg = int(input('hva velger du?'))
 #hvis brukeren valgte 1
 if valg == 1:
-    userpokemon = input("Hvilken pokemon letter du etter?")
+    userpokemon = input("Hvilken pokemon letter du etter? ")
     url = f"https://pokeapi.co/api/v2/pokemon/{userpokemon}"
     response = requests.get(url)
     print("type" , response.json()["types"][0]["type"]["name"])
@@ -115,37 +115,38 @@ if valg == 4:
     usertype1 = input('hvilken type pokemon velger du? ')
     usertype2 = input('hvilken type pokemon velger du? ')
 
-    pokemon54 = requests.get("https://pokeapi.co/api/v2/pokemon/{usertype1}")
-pokemon3 = requests.get("https://pokeapi.co/api/v2/pokemon/{usertype2}")
+    pokemon54 = requests.get(f"https://pokeapi.co/api/v2/pokemon/{usertype1}")
+    pokemon3 = requests.get(f"https://pokeapi.co/api/v2/pokemon/{usertype2}")
 
 
-pokemon54_height=pokemon54.json()["height"]
-pokemon54_weight=pokemon54.json()["weight"]
+    pokemon54_height=pokemon54.json()["height"]
+    pokemon54_weight=pokemon54.json()["weight"]
 
-pokemon3_height=pokemon3.json()["height"]
-pokemon3_weight=pokemon3.json()["weight"]
-
-
-print (pokemon3_height > pokemon54_height)
-print (pokemon3_weight > pokemon54_weight)
+    pokemon3_height=pokemon3.json()["height"]
+    pokemon3_weight=pokemon3.json()["weight"]
 
 
-if pokemon3_weight > pokemon54_weight:
-    print("pokemon3 weier mer enn pokemon54")
-else:
-    print("pokemon54 weier mer enn pokemon3")
+    print (pokemon3_height > pokemon54_height)
+    print (pokemon3_weight > pokemon54_weight)
 
-if pokemon3_height > pokemon54_height:
-    print("pokemon3 er høyere enn pokemon54")
-else:
-    print("pokemon54 er høyere enn pokemon3")
+
+    if pokemon3_weight > pokemon54_weight:
+        print("pokemon3 weier mer enn pokemon54")
+    else:
+        print("pokemon54 weier mer enn pokemon3")
+
+    if pokemon3_height > pokemon54_height:
+        print("pokemon3 er høyere enn pokemon54")
+    else:
+        print("pokemon54 er høyere enn pokemon3")
 
 
 
 
 #hvis brukeren valgte 5
 if valg == 5:
-    print('21')
+    print("bye")
+    exit()
 
 
 
@@ -160,4 +161,4 @@ if valg == 5:
 
 
 
-# brukeren skal kunne avslutte programmet ved å veldge en "exir" handling.
+# brukeren skal kunne avslutte programmet ved å veldge en "exit" handling.
