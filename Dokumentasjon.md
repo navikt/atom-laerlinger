@@ -1,23 +1,53 @@
 **Lærlingnotater
 
 Lærlingene oppfordres til å fordype seg i hvert av disse emnene, stille spørsmål og dele sin forståelse med andre. Notatene kan også inkludere eksempler, kodeutdrag og praktiske øvelser for å styrke læringen. Dette dokumentet er en ressurs for å hjelpe lærlingene i deres utdanningsreise.
-Uke 1: Introduksjon til Python
+
+***Uke 1: Introduksjon til Python***
+
 •	Python Oppgaver
 o	Gjennomgikk oppgavene i Python-programmering.
 løste 4 oppgaver grunnleggende oppgaver.
 Vi lærte å programmere i Python med enkeltoppgaver
 hver oppgave viste hva vi kunne gjøre i Python
-oppgave 1: hello world
-oppgave 2: if-else
-oppgave 3: lister
-oppgave 4: løkker
+
+**oppgave 1: hello world**
+```
+print('Hello World ' + 'Lukasz')
+```
+
+**oppgave 2: if-else**
+
+```
+age = int(input('Hvor gammel er du? '))
+if age < 18:
+    print('du er under 18 år gammel')
+if age > 18:
+    print('du er ')
+if age == 18:
+    print('du er 18 år gammel')
+```
+
+**oppgave 3: lister**
+```
+numbers = [1,5, 102, 9, 42]
+for numbers in numbers:
+    print(numbers)
+```
+**oppgave 4: løkker**
+```
+for i in range(1, 11):
+    print(i)
+```
 
 o	Lærte grunnleggende konsepter som funksjoner, for-løkker og datatyper.
 Det første vi gikk igjennom var hello world, if-else, løkker, lister og githandlinger
 o	Diskuterte bruken av APIer.
 Du kan hente data fra nett som vi gjorde på Pokemon oppgaven. Bruker mye mindre data kraft fordi du ikke har en ful database sående på din locale pc.
 Vi brukt API for å hente informasjon og ikke skive all koden på nytt
-Uke 2: Introduksjon til Verktøy og Systemer
+
+
+***Uke 2: Introduksjon til Verktøy og Systemer***
+
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
 oppgave 1: lærte hvordan importere data fra en api
@@ -38,7 +68,7 @@ Jeg pushet koden til git hub sånn at Lukasz kunne se kodene og finne ut hva vi 
 Jira
 •	Lastet ned Jira på oppsatt RHEL maskin.
 Lastet ned jira fra browser og lastet det opp på Linux serveren og begynte å konfigurere den opp.
-Uke 3: Systemadministrasjon og Verktøy
+***Uke 3: Systemadministrasjon og Verktøy***
 •	Installasjon av Jira
 o	Gitt veiledning om Jira-installasjon med fokus på konfigurasjon og endringer i konfigurasjonsfiler.
 Jeg fikk lære og gjennomgått hvordan man navigerer seg i Linux og hvordan Linux er satt opp.
@@ -96,7 +126,8 @@ Vi hadde en prat om det og når vi lager en cluster struktur som vi gjorde. Og m
 
 
 
-Uke 4: Avanserte Emner
+***Uke 4: Avanserte Emner***
+
 •	NFS (Network File System)
 o	Utforsket NFS og dens rolle i deling av filer over et nettverk.
 Network file system deler filer fra databasen til pcer som er i samme Nettverk. Brukere kan få tak i remote systemer slik som om de var fra lokal-pc. Lokale PCer kan spare diskplass fordi filer blir lagret på serveren istedenfor locale maskiner. Vi kan bruke lagrings enheter som for eks USB minnebrikke, da kan andre maskiner koble seg opp til NFS og bruke dem uten å gå fysisk til serveren. (https://ubuntu.com/server/docs/service-nfs) kilde. 
