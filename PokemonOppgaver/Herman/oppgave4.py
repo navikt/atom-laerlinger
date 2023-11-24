@@ -8,13 +8,11 @@ pokemon3 = requests.get(f"https://pokeapi.co/api/v2/pokemon/3")
 # Deretter få inn høyden og vekten på de to forsjelige. 
 
 pokemon54_name=pokemon54.json()["name"]
-
 pokemon54_height=pokemon54.json()["height"]
 pokemon54_weight=pokemon54.json()["weight"]
 
 
 pokemon3_name=pokemon3.json()["name"]
-
 pokemon3_height=pokemon3.json()["height"]
 pokemon3_weight=pokemon3.json()["weight"]
 
