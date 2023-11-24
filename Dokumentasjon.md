@@ -70,16 +70,11 @@ Vi brukt API for å hente informasjon og ikke skive all koden på nytt
 
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
-
-oppgave 1: lærte hvordan importere data fra en api    
-
-oppgave 2: lærte hvordan hente relevant data fra en api   
-
-oppgave 3: lærte hvordan hente type                       
-
-oppgave 4: lærte hvordan sammenligne to typer Pokemon         
-                  
-oppgave 5: lagde en applikasjon med en menu,                        
+oppgave 1: lærte hvordan importere data fra en api
+oppgave 2: lærte hvordan hente relevant data fra en api
+oppgave 3: lærte hvordan hente type 
+oppgave 4: lærte hvordan sammenligne to typer Pokemon
+oppgave 5: lagde en applikasjon med en menu,
 
 •	Git og GitHub
 
