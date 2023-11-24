@@ -137,7 +137,8 @@ Vi hadde en prat om det og når vi lager en cluster struktur som vi gjorde. Og m
 
 •	NFS (Network File System)
 o	Utforsket NFS og dens rolle i deling av filer over et nettverk.
-Network file system deler filer fra databasen til pcer som er i samme Nettverk. Brukere kan få tak i remote systemer slik som om de var fra lokal-pc. Lokale PCer kan spare diskplass fordi filer blir lagret på serveren istedenfor locale maskiner. Vi kan bruke lagrings enheter som for eks USB minnebrikke, da kan andre maskiner koble seg opp til NFS og bruke dem uten å gå fysisk til serveren. (https://ubuntu.com/server/docs/service-nfs) kilde. 
+Network file system deler filer fra databasen til pcer som er i samme Nettverk. Brukere kan få tak i remote systemer slik som om de var fra lokal-pc. Lokale PCer kan spare diskplass fordi filer blir lagret på serveren istedenfor locale maskiner. Vi kan bruke lagrings enheter som for eks USB minnebrikke, da kan andre maskiner koble seg opp til NFS og bruke dem uten å gå fysisk til serveren.
+[Kilde](https://ubuntu.com/server/docs/service-nfs). 
 
 •	Jira Cluster
 o	Forstått fordelen med å ha et Jira-cluster for økt pålitelighet.
@@ -171,7 +172,8 @@ vi skal finne ut hvrdan v legger til filene til vårt atomrepoet. lage en ny fil
 bonus å formatere filen i github read me filer søke på det. 
 dokumenere hvordan vi skal pushe filer til github.
 
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[Kilde](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 det skal være en
  
 det første steget 
