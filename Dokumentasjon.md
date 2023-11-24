@@ -70,11 +70,196 @@ Vi brukt API for å hente informasjon og ikke skive all koden på nytt
 
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
-oppgave 1: lærte hvordan importere data fra en api
-oppgave 2: lærte hvordan hente relevant data fra en api
-oppgave 3: lærte hvordan hente type 
-oppgave 4: lærte hvordan sammenligne to typer Pokemon
-oppgave 5: lagde en applikasjon med en menu,
+
+**oppgave 1: lærte hvordan importere data fra en api**
+
+```
+import requests     
+response = requests.get(f"https://pokeapi.co/api/v2/pokemon/6")     
+print("type" , response.json()["types"][0]["type"]["name"])        
+print("navn " + ( response.json()["name"]))     
+print("height" , response.json()["height"])     
+print("weight" , response.json()["weight"])     
+```
+
+**oppgave 2: lærte hvordan hente relevant data fra en api**
+```
+import requests
+
+response = requests.get("https://pokeapi.co/api/v2/type")
+
+
+
+
+for type in response.json()["results"]:
+    print(type["name"])
+
+
+countries = ["Norway", "Sweden", "Denmark", "Finland", "Iceland", 
+    "United States", "Canada", "Mexico", "Brazil", "Argentina", "China", 
+    "Japan", "South Korea", "India", "Australia", "New Zealand", "Russia",
+    "Germany", "France", "United Kingdom"]
+counter = 0
+for i, country in enumerate(countries):
+    print (i, country)
+    counter = counter + 1
+
+print(countries.count("Norway"))
+print(counter)
+```
+**oppgave 3: lærte hvordan hente type**
+```
+import requests
+
+type = "electric"
+
+url = f"https://pokeapi.co/api/v2/type/{type}"
+
+response = requests.get(url).json()
+
+pokemon_list = response["pokemon"]
+
+for pokemon in pokemon_list: print(pokemon["pokemon"]["name"])
+
+
+```
+**oppgave 4: lærte hvordan sammenligne to typer Pokemon**
+```
+import requests
+
+pokemon54 = requests.get("https://pokeapi.co/api/v2/pokemon/54")
+pokemon3 = requests.get("https://pokeapi.co/api/v2/pokemon/3")
+
+
+pokemon54_height=pokemon54.json()["height"]
+pokemon54_weight=pokemon54.json()["weight"]
+
+pokemon3_height=pokemon3.json()["height"]
+pokemon3_weight=pokemon3.json()["weight"]
+
+
+print (pokemon3_height > pokemon54_height)
+print (pokemon3_weight > pokemon54_weight)
+
+
+if pokemon3_weight > pokemon3_weight:
+    print("pokemon3 weier mer enn pokemon54")
+else:
+    print("pokemon54 weier mer enn pokemon3")
+
+if pokemon3_height > pokemon3_height:
+    print("pokemon3 er høyere enn pokemon54")
+else:
+    print("pokemon54 er høyere enn pokemon3")
+
+
+temperaturen = 30
+
+if temperaturen < 0:
+    print("Det er frysepunktet, kle deg varmt.")
+
+if temperaturen > 0 and temperaturen < 15:
+    print("Det er kjølig, ta på en jakke.")
+
+if temperaturen > 16 and temperaturen < 25:
+    print("Det er behagelig, nyt været.")
+
+if temperaturen > 25:
+    print("Det er varmt, tid for shorts og T-skjorte.")
+```
+**oppgave 5: lagde en applikasjon med en menu,**
+```
+#viser til brukeren hva han kan velge
+def valg():
+    print("1. Get all pokemon info")
+    print("2. List all types")
+    print("3. Get Pokemon by type")
+    print("4. Compare two Pokemon")
+    print("5. Exit")
+
+#den gjør at menu blir vist i terminalen
+valg()
+
+
+#spør brukeren hva vil han velge
+valg = int(input('hva velger du?'))
+#hvis brukeren valgte 1
+if valg == 1:
+    userpokemon = input("Hvilken pokemon letter du etter? ")
+    url = f"https://pokeapi.co/api/v2/pokemon/{userpokemon}"
+    response = requests.get(url)
+    print("type" , response.json()["types"][0]["type"]["name"])
+    print("navn " + ( response.json()["name"]))
+    print("height" , response.json()["height"])
+    print("weight" , response.json()["weight"])
+
+
+#Hvis brukeren valgte 2
+if valg == 2:
+    url = f"https://pokeapi.co/api/v2/type"
+    response = requests.get(url)
+    for type in response.json()["results"]:
+        print(type["name"])
+        
+#Hvis brukeren valgte 3
+if valg == 3:
+    #velger type som pc skal se etter
+    usertype = input('hvilken type pokemon velger du? ')
+    url = f"https://pokeapi.co/api/v2/type/{usertype}"
+    response = requests.get(url)
+    print(response.json()["pokemon"])
+    for pokemon in response.json()["pokemon"]: print(pokemon["pokemon"]["name"])
+#response = requests.get(url).json()
+
+#pokemon_list = response["pokemon"]
+
+
+
+
+
+#hvis brukeren valgte 4
+if valg == 4:
+    #hvilken pokemon velger du?
+    usertype1 = input('hvilken type pokemon velger du? ')
+    usertype2 = input('hvilken type pokemon velger du? ')
+
+    pokemon54 = requests.get(f"https://pokeapi.co/api/v2/pokemon/{usertype1}")
+    pokemon3 = requests.get(f"https://pokeapi.co/api/v2/pokemon/{usertype2}")
+
+
+    pokemon54_height=pokemon54.json()["height"]
+    pokemon54_weight=pokemon54.json()["weight"]
+
+    pokemon3_height=pokemon3.json()["height"]
+    pokemon3_weight=pokemon3.json()["weight"]
+
+
+    print (pokemon3_height > pokemon54_height)
+    print (pokemon3_weight > pokemon54_weight)
+
+
+    if pokemon3_weight > pokemon54_weight:
+        print("pokemon3 weier mer enn pokemon54")
+    else:
+        print("pokemon54 weier mer enn pokemon3")
+
+    if pokemon3_height > pokemon54_height:
+        print("pokemon3 er høyere enn pokemon54")
+    else:
+        print("pokemon54 er høyere enn pokemon3")
+
+
+
+
+#hvis brukeren valgte 5
+if valg == 5:
+    print("bye")
+    exit()
+
+
+
+
+```
 
 •	Git og GitHub
 
