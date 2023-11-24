@@ -297,11 +297,6 @@ if valg == 4:
 
 
 
-
-
-
-```
-
 •	Git og GitHub
 
 o	Forklart Git som et versjonskontrollsystem.
