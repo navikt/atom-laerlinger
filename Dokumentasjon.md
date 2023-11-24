@@ -68,7 +68,10 @@ Jeg pushet koden til git hub sånn at Lukasz kunne se kodene og finne ut hva vi 
 Jira
 •	Lastet ned Jira på oppsatt RHEL maskin.
 Lastet ned jira fra browser og lastet det opp på Linux serveren og begynte å konfigurere den opp.
+
+
 ***Uke 3: Systemadministrasjon og Verktøy***
+
 •	Installasjon av Jira
 o	Gitt veiledning om Jira-installasjon med fokus på konfigurasjon og endringer i konfigurasjonsfiler.
 Jeg fikk lære og gjennomgått hvordan man navigerer seg i Linux og hvordan Linux er satt opp.
