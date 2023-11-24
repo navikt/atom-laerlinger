@@ -15,14 +15,23 @@ hver oppgave viste hva vi kunne gjøre i Python
 print('Hello World ' + 'Lukasz')
 ```
 
+
 **oppgave 2: if-else**
 
+bruker blir sport om input. 
+hvis input er under 18.     
+print i terminalen du er under 18 år gammel     
+hvis input er over 18       
+print du er over 18 år gammel       
+hvis input er lik 18        
+print du er 18 år gammel        
 ```
+
 age = int(input('Hvor gammel er du? '))
 if age < 18:
     print('du er under 18 år gammel')
 if age > 18:
-    print('du er ')
+    print('du er over 18 år gammel')
 if age == 18:
     print('du er 18 år gammel')
 ```
