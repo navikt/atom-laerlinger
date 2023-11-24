@@ -71,18 +71,7 @@ Vi brukt API for å hente informasjon og ikke skive all koden på nytt
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
 
-<<<<<<< HEAD
-oppgave 1: lærte hvordan importere data fra en api    
-
-oppgave 2: lærte hvordan hente relevant data fra en api   
-
-oppgave 3: lærte hvordan hente type                       
-
-oppgave 4: lærte hvordan sammenligne to typer Pokemon         
-                  
-oppgave 5: lagde en applikasjon med en menu,                        
-=======
-**oppgave 1: lærte hvordan importere data fra en api**
+s**oppgave 1: lærte hvordan importere data fra en api**
 
 Jeg har skrevet inn en link om hva jeg vil ha. Linken er til pokemon nummer 6. Koden printer ut type, navn, høyden og vekten til pokemn nummer 6 i rekkefølge.
 ```
