@@ -400,12 +400,12 @@ nfs har ikke noe driekte mde noe med å spare disk plas'
 har et felles område hvor alle kan hene informasjon som alle skal ha ilgang til
 ha et felles område som alle serverene skal bruke
 egge det i slack kanalen sånn at 
-når amn kjøre n kløster kan man oppkradere en server med å ta den ene ned og kjøre krafen på den andre sånn når den er ferdig oppkradert kan man oppkradere den adre
-fler eksempler på progoppgavene
-lode balancer har ikke noe med datakrat. hensikten med last balansereren er å fordele data traffiken ikke datakraftenfordele lastn på serverene. når d  automatisk slår av en servner tar de andre noeene kraften. kunn trafikk flyt bruker man lastbalansereren. legger inne n lelding nr en av serverene. bruker det til traffik flyt ikke fordele serverkraft.
-vi skal finne ut hvrdan v legger til filene til vårt atomrepoet. lage en ny fil g legge inn dukumentasjonen.
+når amn kjøre n kløster kan man oppkradere en server med å ta den ene ned og kjøre krafen på den andre sånn når den er ferdig oppgradert kan man oppgradere den andre
+flere eksempler på python oppgavene
+lode balancer har ikke noe med datakrat. hensikten med last balansserveren er å fordele data trafikken ikke datakraftenfordele lasten på serverene. når d automatisk slår av en servner tar de andre noeene kraften. kun trafikk flyt bruker man lastbalansserveren. legger inne lelding nr en av servere. bruker det til trafikk flyt ikke fordele serverkraft.
+vi skal finne ut hvordan vi legger til filene til vårt atomrepoet. lage en ny fil å legge inn dokumentasjonen.
 bonus å formatere filen i github read me filer søke på det. 
-dokumenere hvordan vi skal pushe filer til github.
+dokumentere hvordan vi skal pushe filer til github.
 
 [Kilde](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
