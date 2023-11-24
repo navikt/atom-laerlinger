@@ -170,5 +170,9 @@ dokumenere hvordan vi skal pushe filer til github.
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 det skal være en
  
+det første steget 
+git add filen som er endret(tips bruk git satus for å se hvilken fil som er endret)
+git commit -m "meldingen" 
+git push for å dyte det inn
 
 
