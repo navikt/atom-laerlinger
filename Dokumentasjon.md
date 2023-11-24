@@ -1,8 +1,8 @@
-**Lærlingnotater
+# Lærlingnotater
 
 Lærlingene oppfordres til å fordype seg i hvert av disse emnene, stille spørsmål og dele sin forståelse med andre. Notatene kan også inkludere eksempler, kodeutdrag og praktiske øvelser for å styrke læringen. Dette dokumentet er en ressurs for å hjelpe lærlingene i deres utdanningsreise.
 
-***Uke 1: Introduksjon til Python***
+## Uke 1: Introduksjon til Python
 
 •	Python Oppgaver
 o	Gjennomgikk oppgavene i Python-programmering.
@@ -42,11 +42,12 @@ for i in range(1, 11):
 o	Lærte grunnleggende konsepter som funksjoner, for-løkker og datatyper.
 Det første vi gikk igjennom var hello world, if-else, løkker, lister og githandlinger
 o	Diskuterte bruken av APIer.
-Du kan hente data fra nett som vi gjorde på Pokemon oppgaven. Bruker mye mindre data kraft fordi du ikke har en ful database sående på din locale pc.
+Du kan hente data fra nett som vi gjorde på Pokemon oppgaven. 
+Bruker mye mindre data kraft fordi du ikke har en ful database sående på din locale pc.
 Vi brukt API for å hente informasjon og ikke skive all koden på nytt
 
 
-***Uke 2: Introduksjon til Verktøy og Systemer***
+## Uke 2: Introduksjon til Verktøy og Systemer
 
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
@@ -57,11 +58,14 @@ oppgave 4: lærte hvordan sammenligne to typer Pokemon
 oppgave 5: lagde en applikasjon med en menu,
 
 •	Git og GitHub
+
 o	Forklart Git som et versjonskontrollsystem.
 Fikk en forklaring på hva GitHub er og hvordan vi skal bruke det i arbeidet vårt.
 Vi bruke GitHub for å dele filer med hverandre over internettet istedenfor å sende dem på mail.
+
 o	Demonstrert forskjellen mellom lokale og eksterne (remote) repositorier.
-Locale repositries kan være at du lagrer filene dine lokalt på pcen din og å lagre ing remote kan være å laste det opp til en server eller git hub sånn at alle team medlemmene kan få tilgang til med.
+Locale repositries kan være at du lagrer filene dine lokalt på pcen din og å lagre ting remote kan være å laste det opp til en server eller git hub sånn at alle team medlemmene kan få tilgang til med.
+
 o	Skissert prosessen for å pushe kode til et Git-repo.
 Jeg pushet koden til git hub sånn at Lukasz kunne se kodene og finne ut hva vi gjorde annerledes får å løse en oppgave.
 
@@ -70,7 +74,7 @@ Jira
 Lastet ned jira fra browser og lastet det opp på Linux serveren og begynte å konfigurere den opp.
 
 
-***Uke 3: Systemadministrasjon og Verktøy***
+## Uke 3: Systemadministrasjon og Verktøy
 
 •	Installasjon av Jira
 o	Gitt veiledning om Jira-installasjon med fokus på konfigurasjon og endringer i konfigurasjonsfiler.
@@ -129,7 +133,7 @@ Vi hadde en prat om det og når vi lager en cluster struktur som vi gjorde. Og m
 
 
 
-***Uke 4: Avanserte Emner***
+## Uke 4: Avanserte Emner
 
 •	NFS (Network File System)
 o	Utforsket NFS og dens rolle i deling av filer over et nettverk.
