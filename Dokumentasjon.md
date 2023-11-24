@@ -289,19 +289,18 @@ if valg == 4:
     else:
         print("pokemon54 er høyere enn pokemon3")
 
+        #hvis brukeren valgte 5
+        if valg == 5:
+            print("bye")
+            exit()
 
 
 
-#hvis brukeren valgte 5
-if valg == 5:
-    print("bye")
-    exit()
 
 
 
 
 ```
->>>>>>> e19d76866772b919dc1c89ae9bf7f32e6550ffaa
 
 •	Git og GitHub
 
