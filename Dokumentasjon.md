@@ -71,7 +71,18 @@ Vi brukt API for å hente informasjon og ikke skive all koden på nytt
 •	Rest Python Oppgave
 løste 5 Pokemon oppgaver.
 
-s**oppgave 1: lærte hvordan importere data fra en api**
+<<<<<<< HEAD
+oppgave 1: lærte hvordan importere data fra en api    
+
+oppgave 2: lærte hvordan hente relevant data fra en api   
+
+oppgave 3: lærte hvordan hente type                       
+
+oppgave 4: lærte hvordan sammenligne to typer Pokemon         
+                  
+oppgave 5: lagde en applikasjon med en menu,                        
+=======
+**oppgave 1: lærte hvordan importere data fra en api**
 
 Jeg har skrevet inn en link om hva jeg vil ha. Linken er til pokemon nummer 6. Koden printer ut type, navn, høyden og vekten til pokemn nummer 6 i rekkefølge.
 ```
@@ -318,7 +329,7 @@ Jeg fikk lære og gjennomgått hvordan man navigerer seg i Linux og hvordan Linu
 o	Undersøkt lett formålet med brannmurer i nettverkssikkerhet.
 Den største fordelen for brukere er bedre sikkerhet. Ved hjelp av en brannmur setter du opp et sikkerhetsnett som kan bidra til å beskytte datamaskinen eller nettverket mot skadelig innkommende trafikk. Denne teknologien kan også filtrere skadelig utgående trafikk. (https://www.eset.com/no/firewall/) kilde.
 o	Diskutert hvordan man bestiller og konfigurerer servere, inkludert RAM, CPU og OS-krav.
-Vi bestilte alt ved hjelp av jira.
+Vi bestilte alt ved hjelp av Basta. Vi bestilte det minste vi kunne bestille for i trengte ikke mer og utifra det dockumente sa
 •	Linux Kommandoer og Filstruktur
 o	Lært viktige Linux-kommandoer og deres bruksområder.
 Laget et Word-dokument over viktige Linux kommandoer
@@ -356,7 +367,7 @@ Man	Command’s manual
 	
 
 o	Utforsket filstrukturer og beste praksis for organisering.
-Vi hadde en prat om det og når vi lager en cluster struktur som vi gjorde. Og man bruker to nesten helt like noder burde man konfigurere dem opp helt ikt sånn at det ikke blir nee forvirring å hvor ting ligger. Det er også positivt å gjøre det på en ryddig og fin måte slik at når noen tar over eller hjelper deg blir det ikke forvirrende og vanskelig å jobbe med dem.
+Vi hadde en prat om det og når vi lager en cluster struktur som vi gjorde. Og man bruker to helt like noder burde man konfigurere dem opp helt likt sånn at det ikke blir noe forvirring på hvor ting ligger. Det er også positivt å gjøre det på en ryddig og fin måte slik at når noen tar over eller hjelper deg blir det ikke forvirrende og vanskelig å jobbe med dem.
 
 
 
@@ -375,6 +386,13 @@ o	Utforsket NFS og dens rolle i deling av filer over et nettverk.
 Network file system deler filer fra databasen til pcer som er i samme Nettverk. Brukere kan få tak i remote systemer slik som om de var fra lokal-pc. Lokale PCer kan spare diskplass fordi filer blir lagret på serveren istedenfor locale maskiner. Vi kan bruke lagrings enheter som for eks USB minnebrikke, da kan andre maskiner koble seg opp til NFS og bruke dem uten å gå fysisk til serveren.
 [Kilde](https://ubuntu.com/server/docs/service-nfs). 
 
+Nfs har ikke noe driekte mulighet for å spare disk plass.
+Det er et felles område hvor alle kan hene informasjon som alle skal ha ilgang til.
+Ha et felles område som alle serverene skal bruke
+Legge det i slack kanalen sånn at alle kan se det istedn for å sende individuelle opptateringer eller ha et møte.
+Når mann kjøre et kløster kan man oppkradere den en server ved å ta ned den ene og kjøre krafen på den andre sånn at nettsiden slipper å gå ned. Når den første er ferdig oppkradert kan man oppkradere den andre uten problemer.
+vi skal finne ut hvrdan v legger til filene til vårt atomrepoet. lage en ny fil g legge inn dukumentasjonen.
+
 •	Jira Cluster
 o	Forstått fordelen med å ha et Jira-cluster for økt pålitelighet.
 Forstått fordelen med å ha et Jira-cluster for økt pålitelighet. 
@@ -387,25 +405,13 @@ For å ha et jira-cluster så må vi ha en 2 noder, network shared file system, 
 o	Utforsket automatisering og dens betydning.
 Slipper å konfigurere nye enheter til clustere manuelt. Slipper å gjøre feil.  
 Bruke load balancer for å justere hvor mye datakraft clusteren bruker til enhver tid. Dette er positivt, fordi du bruker bare den kraften du trenger, istedenfor å betale for datakraften som ikke er i bruk. 
+lode balancer har ikke noe med datakrat. Hensikten med last balansereren er å fordele data traffiken ikke datakraften . Den fordele lasten på serverene. Hvis den automatisk slår av en server tar den andre noden datatraffiken. Kunn trafikk flyt bruker man lastbalansereren ikke serverkraft.
 
 o	Presentert trinn for trinn hvordan man automatiserer oppsettet av Jira for effektiv drift.
 Har ikke gjennomgått.
 
 
-Mer forklaring på hva de grunnlegende kodene er 
-Se det dørste greiene jhonas har sent og gåjør det bedre
-Hvor vi bestilte serverne med basta bestilte det minste vi kunne bestille for i trengte ikke mer og utifra det dockumente sa.
-alt skal være helt likkt mllom nodene 
-nfs har ikke noe driekte mde noe med å spare disk plas'
-har et felles område hvor alle kan hene informasjon som alle skal ha ilgang til
-ha et felles område som alle serverene skal bruke
-egge det i slack kanalen sånn at 
-når amn kjøre n kløster kan man oppkradere en server med å ta den ene ned og kjøre krafen på den andre sånn når den er ferdig oppgradert kan man oppgradere den andre
-flere eksempler på python oppgavene
-lode balancer har ikke noe med datakrat. hensikten med last balansserveren er å fordele data trafikken ikke datakraftenfordele lasten på serverene. når d automatisk slår av en servner tar de andre noeene kraften. kun trafikk flyt bruker man lastbalansserveren. legger inne lelding nr en av servere. bruker det til trafikk flyt ikke fordele serverkraft.
-vi skal finne ut hvordan vi legger til filene til vårt atomrepoet. lage en ny fil å legge inn dokumentasjonen.
-bonus å formatere filen i github read me filer søke på det. 
-dokumentere hvordan vi skal pushe filer til github.
+
 
 [Kilde](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -415,5 +421,3 @@ det første steget
 git add filen som er endret(tips bruk git satus for å se hvilken fil som er endret)
 git commit -m "meldingen" 
 git push for å dyte det inn
-
-
