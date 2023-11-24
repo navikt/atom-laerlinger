@@ -11,6 +11,8 @@ Vi lærte å programmere i Python med enkeltoppgaver
 hver oppgave viste hva vi kunne gjøre i Python
 
 **oppgave 1: hello world**
+
+print helloworld og lukasz      
 ```
 print('Hello World ' + 'Lukasz')
 ```
@@ -37,13 +39,25 @@ if age == 18:
 ```
 
 **oppgave 3: lister**
+
+numbers er 1, 5, 102, 9, 42     
+for nummerer i numbers      
+print nummerer som er i numbers     
+
 ```
 numbers = [1,5, 102, 9, 42]
 for numbers in numbers:
     print(numbers)
 ```
+
 **oppgave 4: løkker**
+
+
+for i variabel finn alle nummere fra 1 til 11     
+print i variabel
+
 ```
+
 for i in range(1, 11):
     print(i)
 ```
