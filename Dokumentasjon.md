@@ -12,7 +12,7 @@ hver oppgave viste hva vi kunne gjøre i Python
 
 **oppgave 1: hello world**
 
-print helloworld og lukasz      
+Print helloworld og lukasz      
 ```
 print('Hello World ' + 'Lukasz')
 ```
@@ -20,13 +20,13 @@ print('Hello World ' + 'Lukasz')
 
 **oppgave 2: if-else**
 
-bruker blir sport om input. 
-hvis input er under 18.     
-print i terminalen du er under 18 år gammel     
-hvis input er over 18       
-print du er over 18 år gammel       
-hvis input er lik 18        
-print du er 18 år gammel        
+Bruker blir sport om input. 
+Hvis input er under 18.     
+Hrint i terminalen du er under 18 år gammel.
+Hvis input er over 18.
+Print du er over 18 år gammel.       
+Hvis input er lik 18.        
+Print du er 18 år gammel.        
 ```
 
 age = int(input('Hvor gammel er du? '))
@@ -39,11 +39,8 @@ if age == 18:
 ```
 
 **oppgave 3: lister**
-
-numbers er 1, 5, 102, 9, 42     
-for nummerer i numbers      
-print nummerer som er i numbers     
-
+    
+Terminalen printer ut nummerene 1, 5, 102, 9, 42 i terminalen.
 ```
 numbers = [1,5, 102, 9, 42]
 for numbers in numbers:
@@ -53,9 +50,8 @@ for numbers in numbers:
 **oppgave 4: løkker**
 
 
-for i variabel finn alle nummere fra 1 til 11     
-print i variabel
-
+Detter er en for løkke og den printer alle nummerene som er bestemt.                
+I dette tilfelle printer terminalen ut nummerene fra til 11.
 ```
 
 for i in range(1, 11):
